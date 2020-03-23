@@ -1,0 +1,7 @@
+# frozen_string_literal: true
+
+Diary::Application.routes.draw do
+  resources 'entries'
+  get '/' => 'welcome#index'
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+end
